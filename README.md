@@ -1,5 +1,4 @@
 ![Go-StatusMonitor Logo][logo]
-# Go-StatusMonitor
 A simple status monitor that checks the status of servers.
 
 ![GitHub](https://img.shields.io/github/license/Go-StatusMonitor/Go-StatusMonitor?style=for-the-badge)
