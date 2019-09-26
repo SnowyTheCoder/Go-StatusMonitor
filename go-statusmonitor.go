@@ -20,25 +20,25 @@ const (
 
    mysqladdress = "localhost" // MySQL address
    mysqlusername = "username" // MySQL username
-	 mysqlpassword = "password" // MySQL password
+   mysqlpassword = "password" // MySQL password
    mysqldatabase = "database" // MySQL database
    mysqltable = "statusmonitor" // MySQL table
 
-	 statusUp = 1 // The status code that will be put in the MySQL table if the server is up.
-	 statusDown = 2 // The status code that will be put in the MySQL table if the server is down.
+   statusUp = 1 // The status code that will be put in the MySQL table if the server is up.
+   statusDown = 2 // The status code that will be put in the MySQL table if the server is down.
 
-	 emailEnabled = true
-	 emailToAddress = "fred@example.com" // Who should we send the email to?
-	 emailFromAddress = "status@example.com" // Email from address
-	 emailSubject = "[Alert] Some servers may be down!" // Email subject
-	 emailMessage = "The following servers seem to be down: " // Email Message (First Message) HTML / TEXT
-	 emailMessage2 = "<br><br>From Go-StatusMonitor!" // Email Message (Last Message) HTML / TEXT
-	 emailServerAddress = "localhost" // Address of your mail server (You should be able to use Gmail)
-	 emailServerPort = 465 // Port of your mail server
-	 emailServerUsername = "status@example.com" // Mail server username
-	 emailServerPassword = "qwertyIsABADPassw0rd!" // Mail server password
+   emailEnabled = true
+   emailToAddress = "fred@example.com" // Who should we send the email to?
+   emailFromAddress = "status@example.com" // Email from address
+   emailSubject = "[Alert] Some servers may be down!" // Email subject
+   emailMessage = "The following servers seem to be down: " // Email Message (First Message) HTML / TEXT
+   emailMessage2 = "<br><br>From Go-StatusMonitor!" // Email Message (Last Message) HTML / TEXT
+   emailServerAddress = "localhost" // Address of your mail server (You should be able to use Gmail)
+   emailServerPort = 465 // Port of your mail server
+   emailServerUsername = "status@example.com" // Mail server username
+   emailServerPassword = "qwertyIsABADPassw0rd!" // Mail server password
 
-	 checkTime = 30 // How many seconds should we wait before checking the status of servers again?
+   checkTime = 30 // How many seconds should we wait before checking the status of servers again?
 )
 
 var servers = map[string]string{ // Add more servers to check by adding a new line!
