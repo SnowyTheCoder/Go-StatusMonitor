@@ -2,4 +2,4 @@
 #### *Copyright (C) 2019 Joshua Sing*
 #### *All rights reserved.*
 
-#### *Do not use these logos without permission from Joshua Sing (@joshuasing)!*
+#### *You can use these images if you do not claim them as your own!*
