@@ -1,6 +1,8 @@
 # Go-StatusMonitor
 A simple status monitor that checks the status of servers.
 
+![GitHub](https://img.shields.io/github/license/Go-StatusMonitor/Go-StatusMonitor?style=for-the-badge)
+
 # What it does
 Go-StatusMonitor checks a list of servers and outputs the status in to a MySQL table.
 If any servers are down it will send a email alerting you that servers are down!
