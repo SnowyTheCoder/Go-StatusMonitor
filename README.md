@@ -10,7 +10,7 @@ It out puts into a MySQL table so you could display the status of servers in too
 <br><br>
 # How do I setup the MySQL table?
 It's simple just make a new Table a bit like this:<br>
-```
+```sql
 CREATE TABLE GoStatusMonitor (
 Server_Name VARCHAR(200) NOT NULL,
 Status VARCHAR(30) NOT NULL,
@@ -37,5 +37,35 @@ Yes, you can use it if you do not claim it as your own.
 # Contributors
 #### [Joshua Sing @joshuasing](https://github.com/joshuasing)
 #### [Joel Sing @4a6f656c](https://github.com/4a6f656c)
+
+<details>
+  <summary>License</summary>
+BSD 2-Clause License
+
+Copyright (c) 2019, Joshua Sing
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this
+   list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+</details>
 
 [logo]: https://raw.githubusercontent.com/Go-StatusMonitor/Go-StatusMonitor/master/logo/Go-StatusMonitor%20Logo%20Cropped.png "Go-StatusMonitor Logo"
