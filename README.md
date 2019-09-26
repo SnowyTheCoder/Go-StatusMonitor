@@ -17,17 +17,18 @@ Status VARCHAR(30) NOT NULL,
 );
 ```
 
-# How do I compile and use this?
+# FAQ:
+#### How do I compile and use this?
 Run "go build go-statusmonitor.go" after changing everything you want to change,<br>
 Then run the compiled version!<br>
 
-# Can I use this to check the status of minecraft servers?
+#### Can I use this to check the status of minecraft servers?
 Yes.
 
-# Can I use this to check the status of my website?
+#### Can I use this to check the status of my website?
 Yes.
 
-# Can I download and use this for private / commercial use?
+#### Can I download and use this for private / commercial use?
 Yes, you can do anything you want with code / program as long as you do not remove the copyright message and/or the license.
 
 # Contributors
