@@ -1,7 +1,7 @@
 ![Go-StatusMonitor Logo][logo]<br>
 A simple status monitor that checks the status of servers.<br>
 
-![GitHub](https://img.shields.io/github/license/Go-StatusMonitor/Go-StatusMonitor?style=for-the-badge)![GitHub](https://img.shields.io/badge/Go-1.13.1-blue?style=for-the-badge&logo=go)
+![GitHub](https://img.shields.io/github/license/Go-StatusMonitor/Go-StatusMonitor?style=for-the-badge) ![Go Version](https://img.shields.io/badge/Go%20Version-1.13.1-blue?style=for-the-badge&logo=go)
 <br><br>
 # What it does
 Go-StatusMonitor checks a list of servers and outputs the status in to a MySQL table.<br>
