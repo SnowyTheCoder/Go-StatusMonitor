@@ -5,11 +5,11 @@ A simple status monitor that checks the status of servers.<br>
 <br><br>
 # What it does
 Go-StatusMonitor checks a list of servers and outputs the status in to a MySQL table.<br>
-If any servers are down it will send a email alerting you that servers are down!<br>
-It out puts into a MySQL table so you could display the status of servers in tools like Grafana.<br>
+If any servers are down it will send a email alerting you that servers are down! (Can be disabled!)<br>
+It outputs into a MySQL table so you could display the status of servers in tools like Grafana.<br>
 <br><br>
 # How do I setup the MySQL table?
-It's simple just make a new Table a bit like this:<br>
+It's simple just make a new MySQL Table a bit like this:<br>
 ```sql
 CREATE TABLE GoStatusMonitor (
 Server_Name VARCHAR(200) NOT NULL,
