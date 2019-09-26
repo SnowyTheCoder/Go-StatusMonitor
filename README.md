@@ -39,7 +39,7 @@ Yes, you can use it if you do not claim it as your own.
 #### [Joel Sing @4a6f656c](https://github.com/4a6f656c)
 
 <details>
-  <summary>*Go-StatusMonitor's License*</summary>
+  <summary>Go-StatusMonitor's License</summary>
 BSD 2-Clause License<br>
 <br>
 Copyright (c) 2019, Joshua Sing<br>
