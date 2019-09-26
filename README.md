@@ -1,3 +1,4 @@
+![Go-StatusMonitor Logo]logo
 # Go-StatusMonitor
 A simple status monitor that checks the status of servers.
 
@@ -34,3 +35,4 @@ Yes, you can do anything you want with code / program as long as you do not remo
 ### [Joshua Sing @joshuasing](https://github.com/joshuasing)
 ### [Joel Sing @4a6f656c](https://github.com/4a6f656c)
 
+[logo]: https://raw.githubusercontent.com/Go-StatusMonitor/Go-StatusMonitor/master/logo/Go-StatusMonitor%20Logo%20Cropped.png "Go-StatusMonitor Logo"
