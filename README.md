@@ -30,6 +30,9 @@ Yes.
 <br>
 #### Can I download and use this for private / commercial use?
 Yes, you can do anything you want with code / program as long as you do not remove the copyright message and/or the license.
+<br>
+#### Can I use the logo?
+Yes, you can use it if you do not claim it as your own.
 <br><br>
 # Contributors
 #### [Joshua Sing @joshuasing](https://github.com/joshuasing)
