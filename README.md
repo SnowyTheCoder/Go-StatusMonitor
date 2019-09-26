@@ -1,4 +1,4 @@
-![Go-StatusMonitor Logo]logo
+![Go-StatusMonitor Logo][logo]
 # Go-StatusMonitor
 A simple status monitor that checks the status of servers.
 
