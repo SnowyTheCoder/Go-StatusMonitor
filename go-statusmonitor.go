@@ -1,5 +1,5 @@
 // Go-StatusMonitor
-// Copyright (c) 2019, Joshua Sing
+// Copyright (c) 2019, Joshua Sing and Joel Sing
 // All rights reserved.
 // License: BSD 2-Clause
 package main
@@ -47,7 +47,7 @@ var servers = map[string]string{ // Add more servers to check by adding a new li
  }
 var serversdown = "none" // Don't change!
 var emailed = false // Don't change!
-const ver = "1.0.0-RELEASE" // Version number
+const ver = "1.0.0-RELEASE" // Version number (Please don't change!)
 
 func addServerDown(name string){ // Add a server to the serversdown list.
 	if(serversdown == "none"){
@@ -57,7 +57,7 @@ func addServerDown(name string){ // Add a server to the serversdown list.
 	serversdown = serversdown + name + ", "
 }
 
-func checkServer(name, addr string) { // Checks a server
+func checkServer(name, addr string) { // Checks the status of a server
 	fmt.Printf("[Info] Checking %s (%s)\n", name, addr)
 	conn, err := net.DialTimeout("tcp", addr, 5*time.Second)
 	if err != nil{
@@ -76,7 +76,7 @@ func checkServer(name, addr string) { // Checks a server
   updateStatus(name, statusUp)
 }
 
-func updateStatus(name string, status int) {
+func updateStatus(name string, status int) { // Update the status in the MySQL table!
 	db, err := sql.Open("mysql", fmt.Sprintf("%s:%s@tcp(%s)/%s", mysqlusername, mysqlpassword, mysqladdress, mysqldatabase))
 	if err != nil {
 			fmt.Printf("[Error] Failed to connect to MySQL: %v\n", err)
@@ -97,13 +97,16 @@ func updateStatus(name string, status int) {
 		return
 	}
 	if rows != 1 {
-		fmt.Printf("[Info] Did not effect 1 row! (The value in the database may already be set to %v)\n", status)
+		fmt.Printf("[Info] Did not effect 1 row! (The value in the table may already be set to %v)\n", status)
 		return
 	}
 
 }
 
-func send(body string) {
+func send(body string) { // Sends email (If email is enabled)
+	if(!emailEnabled){
+		return;	
+	}
 	m := gomail.NewMessage()
 	m.SetHeader("From", emailFromAddress)
 	m.SetHeader("To", emailToAddress)
@@ -113,12 +116,14 @@ func send(body string) {
 	if err := d.DialAndSend(m); err != nil {
 	    panic(err)
 	}else{
-		fmt.Println("[Info] Sent Email!")
+		if(debug){
+			fmt.Println("[Info] Sent Email!")
+		}
 	}
 }
 
 func main(){
-	fmt.Println("Go-StatusMonitor Started!")
+	fmt.Println("[Info] Go-StatusMonitor Started!")
 	ticker := time.NewTicker(checkTime * time.Second)
 	ticker2 := time.NewTicker(checkTime * 2 * time.Second)
 	for{
@@ -126,7 +131,9 @@ func main(){
 			checkServer(name, addr)
 		}
 		if(serversdown == "none"){
-			fmt.Println("[Info] All servers are up! Not sending email!")
+			if(debug){
+				fmt.Println("[Info] All servers are up! Not sending email!")
+			}
 		}else{
 			if(!emailed){
 				send(serversdown)
