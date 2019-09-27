@@ -47,7 +47,7 @@ var servers = map[string]string{ // Add more servers to check by adding a new li
  }
 var serversdown = "none" // Don't change!
 var emailed = false // Don't change!
-const ver = "1.0.0-RELEASE" // Version number (Please don't change!)
+const ver = "1.0.2-RELEASE" // Version number (Please don't change!)
 
 func addServerDown(name string){ // Add a server to the serversdown list.
 	if(serversdown == "none"){
